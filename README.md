@@ -1,1 +1,1 @@
-"# amrypharmacy" 
+# amrypharmacy
