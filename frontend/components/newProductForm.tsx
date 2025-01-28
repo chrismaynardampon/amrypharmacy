@@ -40,7 +40,7 @@ export default function NewProductForm() {
           <div>
             <label className="block font-medium">Product Name</label>
             <Input type="text" {...register("productName", { required: "Product name is required" })} />
-            {errors.productName && <p className="text-red-500 text-sm">{errors.productName.message}</p>}
+            
           </div>
 
           {/* Category Dropdown */}
@@ -52,7 +52,7 @@ export default function NewProductForm() {
                 <SelectItem key={cat} value={cat}>{cat}</SelectItem>
               ))}
             </Select>
-            {errors.category && <p className="text-red-500 text-sm">{errors.category.message}</p>}
+            
           </div>
 
           {/* Brand Dropdown */}
@@ -64,21 +64,21 @@ export default function NewProductForm() {
                 <SelectItem key={brand} value={brand}>{brand}</SelectItem>
               ))}
             </Select>
-            {errors.brand && <p className="text-red-500 text-sm">{errors.brand.message}</p>}
+            
           </div>
 
           {/* Price */}
           <div>
             <label className="block font-medium">Price (₱)</label>
             <Input type="number" {...register("price", { required: "Price is required", min: 1 })} />
-            {errors.price && <p className="text-red-500 text-sm">{errors.price.message}</p>}
+            
           </div>
 
           {/* Dosage */}
           <div>
             <label className="block font-medium">Dosage</label>
             <Input type="text" {...register("dosage", { required: "Dosage is required" })} />
-            {errors.dosage && <p className="text-red-500 text-sm">{errors.dosage.message}</p>}
+            
           </div>
 
           {/* Unit of Measure Dropdown */}
@@ -90,7 +90,7 @@ export default function NewProductForm() {
                 <SelectItem key={unit} value={unit}>{unit}</SelectItem>
               ))}
             </Select>
-            {errors.unit && <p className="text-red-500 text-sm">{errors.unit.message}</p>}
+            
           </div>
 
           {/* Submit Button */}
